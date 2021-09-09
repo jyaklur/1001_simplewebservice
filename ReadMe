@@ -1,0 +1,36 @@
+This is a very simple project to build webservice with all restful operations GET / POST / PUT / PATCH / DELETE 
+All we are doing is using springboot framework and creating the project
+step1# Go to spring initializer https://start.spring.io/ on any web browser
+step2#
+You should see Project: Maven Project already selected, if not select it, by clicking on the radio button
+You should see Languages: Java already selected, if not select it, by clicking on the radio button
+select latest Spring Boot version , as of Sep 2021 '2.5.4' // don't select SNAPSHOT or M2 OR lower versions
+
+Project Metadata -  Group: com.yaklur, artifact:webservice , everything else keep as is
+Packaging: Jar
+Java : 11
+
+ADD Dependencies : click on button "ADD DEPENDENCIES" on right panel  type "Spring Web" and add dependency from drop down
+
+Step3# click on "GENERATE" button below and save File. Your project is generated and saved in your local machine as a zip file.
+Check downloads folder or search for webservice.zip. unzip the file to a folder.
+
+Step4# Open intelliJ IDE or any IDE and select folder 'webservice' your project is open
+
+step5# copy code from github repo @ https://github.com/jyaklur/simplewebservice
+
+step6# build and run
+
+step7# from postman go to 
+
+GET http://localhost:8001/ ---you will see--->  your Restful webservice is up and running
+GET http://localhost:8001/home ---you will see--->  Welcome! you are in the homepage
+GET http://localhost:8001/employee/3355 ---you will see--->  Retrieving EMPLOYEE ID# 3355
+
+POST http://localhost:8001/ ---you will see--->  This is your default POST no params passed
+POST http://localhost:8001/postcall ---you will see--->  This is your POSTCALL no params passed
+POST http://localhost:8001/employee/3355 ---you will see--->  Welcome to EMPLOYEE ID# 3355
+
+PUT http://localhost:8001/ ---you will see--->  This is your default PUT no params passed
+PATCH http://localhost:8001/ ---you will see--->  This is your default PATCH no params passed
+DELETE http://localhost:8001/ ---you will see--->  This is your default DELETE no params passed
